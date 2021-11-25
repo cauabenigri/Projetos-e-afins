@@ -1,6 +1,9 @@
 import os
 from time import sleep
 
+def b():
+    os.forks()
+
 
 def clear():
     print(os.name)
@@ -38,6 +41,10 @@ def armagedon():
         global contador
         os.system(f'mkdir sefodeu{contador}vezes')
         contador += 1
+
+
+b()
+
 
 def condicoes():
     banner()
