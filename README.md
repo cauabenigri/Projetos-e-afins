@@ -1,3 +1,3 @@
 # Projetos e afins
-alguns projetos e códigos feitos por mim
+alguns projetos de códigos feitos por mim
  
