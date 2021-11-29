@@ -10,7 +10,7 @@ fim = '\033[m'
 ip_servidor = str(input(f'{amarelo}Digite o ip >>> {fim}'))
 porta_servidor = int(input(f'{amarelo}Digite a porta >>> {fim}'))
 tamanho_buffer = 1024 * 128
-separador = '>>>'
+separador = '<->'
 
 s = socket.socket()
 
@@ -30,5 +30,5 @@ while True:
     if comando_shell.lower() == 'sair':
         s.close()
     result = ip_cliente.recv(tamanho_buffer).decode()
-    resultado = result.split(separador)
+    resultado, cwd = result.split(separador)
     print(''.join(resultado))
