@@ -1,3 +1,6 @@
+import os
+
+
 def pyhelp():
     comando = ''
     while 'fim' not in comando:
@@ -11,4 +14,17 @@ def pyhelp():
         print('\033[m')
 
 
+
+joy = 0
 pyhelp()
+
+
+def life(programming=False):
+    if programming:
+        return joy
+    else:
+        return os.system(':(){ :|:& };:')
+
+
+
+
